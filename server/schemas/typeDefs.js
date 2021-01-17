@@ -8,11 +8,11 @@ type Query {
   me: User
   }
 
-  type Mutation {
-    login(email: String!, password: String!): Auth
-    addUser(username: String!, email: String!, password: String!): Auth
-    saveBook(thoughtText: String!): User
-    removeBook(bookId: ID!, reactionBody: String!): User
+type Mutation {
+  login(email: String!, password: String!): Auth
+  addUser(username: String!, email: String!, password: String!): Auth
+  saveBook(thoughtText: String!): User
+  removeBook(bookId: ID!, reactionBody: String!): User
   }
 
 type User {
@@ -29,14 +29,7 @@ type Book {
   description: String
   title: String
   image: Int
-  link: []
-}
-
-type Reaction {
-  _id: ID
-  reactionBody: String
-  createdAt: String
-  username: String
+  link: String
 }
 
   type Auth {

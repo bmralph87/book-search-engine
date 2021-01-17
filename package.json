@@ -1,0 +1,27 @@
+{
+  "name": "book-search-engine",
+  "version": "1.0.0",
+  "description": "- ✔️ server.js: Implement the Apollo Server and apply it to the Express server as middleware.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmralph87/book-search-engine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmralph87/book-search-engine/issues"
+  },
+  "homepage": "https://github.com/bmralph87/book-search-engine#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "if-env": "^1.0.4"
+  }
+}

@@ -28,7 +28,7 @@ This project was created as an assignment for the PennLPS/TES Fullstack Bootcamp
 
 
 #### My repo can be found [Here](https://github.com/bmralph87/book-search-engine)
-#### My deployed application can be found [Here](https://bmr-book-app.herokuapp.com/)
+#### My deployed application can be found [Here](https://safe-river-60808.herokuapp.com/)
 
 
 ## Sites used for Knowledge:

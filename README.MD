@@ -1,6 +1,6 @@
 # Book-Search-Engine
 
-<img src= "Budget-Tracker Screen shot.jpg">
+<img src= "book-search-enginesshot.jpg">
 
 This project was created as an assignment for the PennLPS/TES Fullstack Bootcamp.
 

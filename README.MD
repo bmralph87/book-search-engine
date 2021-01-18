@@ -1,98 +1,45 @@
-## Back-End Specifications
+# Book-Search-Engine
 
-- ✔️ server.js: Implement the Apollo Server and apply it to the Express server as middleware.
+<img src= "Budget-Tracker Screen shot.jpg">
 
-- ✔️ auth.js: Update the auth middleware function to work with the GraphQL API.
+This project was created as an assignment for the PennLPS/TES Fullstack Bootcamp.
 
-* Schemas directory
 
-- ✔️ index.js: Export your typeDefs and resolvers.
+## Tools used for this project
+- JavaScript
+- Node.js
+- Express
+- Mongoose
+- GraphQl 
+- React
+- Bootstrap
+- Bcrypt
+- Jsonwebtoken
+- Apollo Server
+- Heroku
+- MongoDB Atlas
 
-- resolvers.js: Define the query and mutation functionality to work with the Mongoose models.
 
-* ✔️ typeDefs.js: Define the necessary Query and Mutation types:
-
-- Query type:
-
- me: Which returns a User type.
-
-- Mutation type:
-
-login: Accepts an email and password as parameters; returns an Auth type.
-
-addUser: Accepts a username, email, and password as parameters; returns an Auth type.
-
-saveBook: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a User type. (Look into creating what's known as an input type to handle all of these parameters!)
-
-removeBook: Accepts a book's bookId as a parameter; returns a User type.
-
-- User type:
-
-_id
-
-username
-
-email
-
-bookCount
-
-savedBooks (This will be an array of the Book type.)
-
-- Book type:
-
-bookId (Not the _id, but the book's id value returned from Google's Book API.)
-
-authors (An array of strings, as there may be more than one author.)
-
-description
-
-title
-
-image
-
-link
-
-- Auth type:
-
-token
-
-user (References the User type.)
+## Objective
+- Create a Book-Search-Engine that allows a user to create credentials, login and search for/save books
 
 
 
-## Front-End Specifications
+#### My repo can be found [Here](https://github.com/bmralph87/book-search-engine)
+#### My deployed application can be found [Here](https://bmr-book-app.herokuapp.com/)
 
-- queries.js: This will hold the query GET_ME, which will execute the me query set up using Apollo Server.
 
-- mutations.js:
+## Sites used for Knowledge:
 
-LOGIN_USER will execute the loginUser mutation set up using Apollo Server.
+[Duplicate React documentation](https://reactjs.org/warnings/invalid-hook-call-warning.html)
+[Web Token Validation](https://jwt.io/)
+[Apollo/GraphQl documentation](https://www.apollographql.com/docs/react/integrations/integrations/)
+[React-Apollo Installation](https://www.npmjs.com/package/react-apollo)
+[MongoDB Atlas documentation](https://docs.atlas.mongodb.com/scale-cluster#std-label-scale-cluster)
 
-ADD_USER will execute the addUser mutation.
 
-SAVE_BOOK will execute the saveBook mutation.
 
-REMOVE_BOOK will execute the removeBook mutation.
 
-* ✔️ App.js: Create an Apollo Provider to make every request work with the Apollo server.
-
-* ✔️ SearchBooks.js:
-
-Use the Apollo useMutation() Hook to execute the SAVE_BOOK mutation in the handleSaveBook() function instead of the saveBook() function imported from the API file.
-
-Make sure you keep the logic for saving the book's ID to state in the try...catch block!
-
-* SavedBooks.js:
-
-- ✔️ Remove the useEffect() Hook that sets the state for UserData.
-
-- ✔️ Instead, use the useQuery() Hook to execute the GET_ME query on load and save it to a variable named userData.
-
-- ✔️ Use the useMutation() Hook to execute the REMOVE_BOOK mutation in the handleDeleteBook() function instead of the deleteBook() function that's imported from API file. (Make sure you keep the removeBookId() function in place!)
-
-* SignupForm.js: Replace the addUser() functionality imported from the API file with the ADD_USER mutation functionality.
-
-* LoginForm.js: Replace the loginUser() functionality imported from the API file with the LOGIN_USER mutation functionality.
 
 
 

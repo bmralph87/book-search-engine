@@ -23,7 +23,11 @@ This project was created as an assignment for the PennLPS/TES Fullstack Bootcamp
 
 
 ## Objective
-- Create a book search engine that allows a user to create credentials, login and search for/save and eventually remove books.
+- Create a book search engine via MERN stack.
+
+
+##Description/Usage
+- Book-Search-Engine is a book search engine that allows a user to create credentials, login and search for/save and eventually remove books.
 
 
 

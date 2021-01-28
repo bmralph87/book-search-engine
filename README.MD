@@ -27,7 +27,7 @@ This project was created as an assignment for the PennLPS/TES Fullstack Bootcamp
 
 
 ##Description/Usage
-- Book-Search-Engine is a book search engine that allows a user to create credentials, login and search for/save and eventually remove books.
+- Book-Search-Engine is a an app that utilizes the Google book api and allows a user to create credentials, login and search for/save and eventually remove books.
 
 
 
